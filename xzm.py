@@ -6,7 +6,7 @@ import time
 if len(sys.argv) < 2:
     print ('Usage:<filename> <k> [nfold = 5]')
     exit(0)
-
+'''
 class metadata:
     def __init__(self, y, log):
         self.y = y
@@ -20,7 +20,7 @@ if len(sys.argv) > 3:
     nfold = int( sys.argv[3] )
 else:
     nfold = 5
-
+'''
 dict1 = {}
 
 fi = open( sys.argv[1], 'r' )

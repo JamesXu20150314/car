@@ -8,7 +8,7 @@ if len(sys.argv) < 2:
     exit(0)
 
 tt = time.time()
-print 'Time:' + str( tt )
+#print 'Time:' + str( tt )
 random.seed( tt )
 
 k = int( sys.argv[2] )
@@ -20,8 +20,7 @@ else:
 fi = open( sys.argv[1], 'r' )
 ftr = open( sys.argv[1]+'.train', 'w' )
 fvl = open( sys.argv[1]+'.valid', 'w' )
-for l in fi:
-    
+for l in fi:    
     #validation set should not be too large
     #k can be changed to provide more power(though this already random selected)
     if random.randint( 1 , nfold ) == k:
