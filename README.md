@@ -4,6 +4,12 @@ predict the risk of a car applying for inssurance
 统计数据信息：是否有明显的倾斜现象，即有些风险指数对应特别多？
 各个属性和风险指数的相关关系，是否有些属性可以放弃不选，因为它们无用且可能产生干扰？
 数据倾斜现象严重，风险指数为1的记录个数占了主要，而对于该风险，哟徐诶属性可能根本不具有区分度，比如最后一个特征。
+
+We can solve this problem by data sampling.
+Also we can do somethings in features such as features sampling.
+---by zhimin xu  UTC 2016/12/5 6:46pm 
+
+
 应该如何处理这种情况？避免数据倾斜？移除无用属性？
 ---
 还可以考虑交叉验证
