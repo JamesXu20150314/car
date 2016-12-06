@@ -29,8 +29,8 @@ fvl = open( sys.argv[1]+'.valid', 'w' )
 for l in fi:
     num = l.find(' ')
     key = str(l[:num])
-    kk = str(float(l[:num])/70.0)
-    l = kk + l[num:]
+    #kk = str(float(l[:num])/70.0)
+    #l = kk + l[num:]
     if dict1.has_key(key):
         dict1[key] = dict1[key] + 1
     else:

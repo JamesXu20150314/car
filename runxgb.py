@@ -32,7 +32,8 @@ param = {'max_depth': 4,
          #L2 regression of bias
          #'lambda_bias':0,
          'eval_metric':'rmse',
-         'objective': 'binary:logistic'}
+         'objective': 'reg:linear'}
+         #'objective': 'binary:logistic'}
 
 num_round = 175
 #run cross valication
