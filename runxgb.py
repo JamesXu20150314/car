@@ -32,10 +32,11 @@ param = {'max_depth': 4,
          #L2 regression of bias
          #'lambda_bias':0,
          'eval_metric':'rmse',
-         'objective': 'reg:linear'}
-         #'objective': 'binary:logistic'}
+         'objective': 'count:poisson'}
+         #'objective': 'reg:linear'}
+         #'objective': 'binary:logistic'}#Need to do preprocessing in data
 
-num_round = 175
+num_round = 466
 #run cross valication
 # cv.nround = 200
 # bst.cv = bst.cv = xgb.cv(param=param, data = x[trind,], label = y, nfold = 3, nrounds=cv.nround)
